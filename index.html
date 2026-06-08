@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שאקי פריים | סוכנות שיווק וקידום עסקים</title>
+    <style>
+        /* עיצוב כללי - שחור מט וזהב */
+        :root {
+            --bg-color: #121212; /* שחור מט עמוק */
+            --card-bg: #1a1a1a;  /* שחור מעט בהיר יותר לכרטיסים */
+            --gold-primary: #d4af37; /* זהב קלאסי */
+            --gold-hover: #f3e5ab;   /* זהב בהיר למעבר עכבר */
+            --text-color: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* קונטיינר מרכזי */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* אזור הלוגו והכותרת */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* פלייסוהלדר זמני ללוגו הכתר שלכם */
+        .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 2px dashed var(--gold-primary);
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        h1 {
+            color: var(--gold-primary);
+            font-size: 2.5rem;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        /* אזור אודות / תצוגת הסוכנות */
+        .about-section {
+            background-color: var(--card-bg);
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: var(--gold-primary);
+            margin-top: 0;
+        }
+
+        /* אזור הטופס */
+        .form-section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--gold-primary);
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 25px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-section h2 {
+            color: var(--gold-primary);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .form-description {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        /* עיצוב שדות הטופס */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--gold-primary);
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 12px;
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+        }
+
+        /* עיצוב שדות בחירה מרובה (צ'קבוקסים) */
+        .checkbox-group {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .checkbox-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .checkbox-item input {
+            margin-left: 10px;
+            accent-color: var(--gold-primary);
+            transform: scale(1.2);
+        }
+
+        /* כפתור שליחה יוקרתי */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--gold-primary);
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--gold-hover);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* פוטר */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ראש האתר והלוגו -->
+        <header>
+            <!-- פלייסוהלדר - נחליף אותו בלוגו האמיתי שלך בהמשך -->
+            <div class="logo-placeholder">SHAKI PRIME LOGO</div>
+            <h1>SHAKI PRIME</h1>
+            <p class="subtitle">שיווק וקידום עסקים</p>
+        </header>
+
+        <!-- תצוגת הסוכנות -->
+        <section class="about-section">
+            <h2>מי אנחנו?</h2>
+            <p>סוכנות השיווק <strong>שאקי פריים</strong> מובילה עסקים וחברות לצמיחה דיגיטלית חסרת תקדים. אנו מאמינים בכוחו של שיווק מבוסס תוצאות ובמודלים חכמים שמאפשרים לכל אחד לקחת חלק בהצלחה שלנו.</p>
+            <p>הפלטפורמה שלנו מחברת בין עסקים שרוצים לגדול, לבין שותפי שיווק שמפיצים את הבשורה ומרוויחים אחוזים ישירים מכל מכירה.</p>
+        </section>
+
+        <!-- טופס ההרשמה למפרסמים -->
+        <section class="form-section">
+            <h2>הצטרפו לנבחרת המפרסמים שלנו</h2>
+            <p class="form-description">התחילו לפרסם את המותגים המובילים של שאקי פריים והרוויחו אחוזים מכל מכירה! מלאו את הפרטים ונחזור אליכם בהקדם.</p>
+            
+            <!-- הטופס (הגדרנו שליחה זמנית, בהמשך נחבר אותו למייל שלך) -->
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="name">שם מלא</label>
+                    <input type="text" id="name" name="name" required placeholder="ישראל ישראלי">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">מספר טלפון / WhatsApp</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="050-1234567">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">כתובת אימייל</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">גיל</label>
+                    <select id="age" name="age" required>
+                        <option value="" disabled selected>בחרו טווח גילאים</option>
+                        <option value="under-18">מתחת ל-18</option>
+                        <option value="18-25">18 עד 25</option>
+                        <option value="26-35">26 עד 35</option>
+                        <option value="36-plus">36 ומעלה</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">מגדר</label>
+                    <select id="gender" name="gender">
+                        <option value="" disabled selected>בחרו מגדר (אופציונלי)</option>
+                        <option value="male">זכר</option>
+                        <option value="female">נקבה</option>
+                        <option value="other">אחר</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>איך אתה מתכנן לפרסם אותנו? (ניתן לבחור כמה)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="channels" value="social"> פרופיל אינסטגרם / טיקטוק אישי
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="channels" value="groups"> קבוצות וואטסאפ / טלגרם שלי
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="channels" value="friends"> המלצה ישירה לחברים ומשפחה
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="channels" value="paid"> פרסום ממומן / רשתות שותפים
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="link">קישור לפרופיל מוביל / אתר (אם יש)</label>
+                    <input type="text" id="link" name="link" placeholder="https://instagram.com">
+                </div>
+
+                <button type="submit">שליחת בקשת הצטרפות</button>
+
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 שאקי פריים - Shacky Prime. כל הזכויות שמורות.</p>
+    </footer>
+
+</body>
+</html>
